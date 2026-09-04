@@ -1,0 +1,5 @@
+src/
+├── main.rs         # Reçoit l'argument CLI (le fichier .exe) et gère le flux principal
+├── engine.rs       # Détecte Wine/Proton et exécute les commandes via std::process::Command
+├── sandbox.rs      # Crée les dossiers de préfixe isolés et gère la sécurité (bwrap)
+└── desktop.rs      # Analyse drive_c/ et génère le raccourci .desktop pour le menu Linux
